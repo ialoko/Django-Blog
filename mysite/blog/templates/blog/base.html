@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE	html>
+<html>
+
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div id="content">
+        {% block content %} {% endblock %}
+    </div>
+    <div id="sidebar">
+        <h2>Book Blog</h2>
+        <p>
+        <a href="{%	url	'blog:post_list' %} ">
+            Main page 
+        </a>
+        <p></p>
+        <a href="https://www.goodreads.com/user/show/33243900-iyiola" target="_blank">
+            Connect with me on Goodreads 
+        </a>
+
+        <p></p>
+        <p>This is my book blog where I post about books I'm reading and give recommendations. Feel free to comment</p>
+        </p>
+    </div>
+</body>
+
+</html>
