@@ -1,0 +1,21 @@
+Commands
+
+Sync DATABASE
+
+PGUSER=postgres PASSWORD=Netflixuser1 heroku pg:push blogify DATABASE_URL --app book-blogify
+
+view env variables
+heroku config -a book-blogify
+
+Start bash:    heroku run bash
+
+Deploy
+git add .
+mysite iyi$ git commit -m "added changes"
+git push heroky master
+
+Run locally: python manage.py runserver
+Run migrations: python manage.py makemigrations then python manage.py migrate
+Heroku migrations: heroku python manage.py migrate
+
+
